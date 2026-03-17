@@ -1,0 +1,13 @@
+{
+  "name": "pore_segmentation",
+  "image": "continuumio/miniconda3:latest",
+  "postCreateCommand": "conda install -c ilastik-forge -c conda-forge ilastik mamba -y && pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"],
+      "settings": {
+        "python.defaultInterpreterPath": "/opt/conda/bin/python"
+      }
+    }
+  }
+}
