@@ -1,0 +1,44 @@
+# ============================================================
+# Segmentação de poros EDS/CBS/QEMSCAN — dependências
+# ============================================================
+#
+# ATENÇÃO: Ilastik deve ser instalado via conda, NÃO via pip.
+#   conda create -n pore_seg -c ilastik-forge -c conda-forge ilastik
+#   conda activate pore_seg
+#   pip install -r requirements.txt
+# ============================================================
+
+# --- Imagens ---
+numpy>=1.24
+tifffile>=2023.7
+imageio>=2.31
+Pillow>=10.0
+
+# --- Processamento científico ---
+scipy>=1.11
+scikit-image>=0.21
+
+# --- Dados tabulares ---
+pandas>=2.0
+openpyxl>=3.1
+
+# --- Leitura do .ilp (HDF5) ---
+h5py>=3.9
+
+# --- xarray (necessário para ilastik.experimental.api) ---
+xarray>=2023.6
+
+# --- Visualização ---
+matplotlib>=3.7
+
+# --- Relatório PDF ---
+fpdf2>=2.7.4
+
+# --- Configuração ---
+PyYAML>=6.0
+
+# --- Barra de progresso ---
+tqdm>=4.66
+
+# --- Testes ---
+pytest>=7.4
